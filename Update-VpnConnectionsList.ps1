@@ -1,5 +1,9 @@
+Param (
+    [String]$PbkPath = "\\brick2\files\Data\ServiceDesk\VPN"
+)
+
 $curUserName = $env:USERNAME
-$vpnConfigSrc = "\\brick2\files\Data\ServiceDesk\VPN"
+$vpnConfigSrc = $PbkPath
 $vpnConfigDest = "C:\Users\$curUserName\AppData\Roaming\Microsoft\Network\Connections\Pbk"
 $shortDate = (Get-Date).ToString("yyyyMMdd")
 
