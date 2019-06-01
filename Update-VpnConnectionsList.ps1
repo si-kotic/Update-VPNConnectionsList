@@ -1,3 +1,7 @@
+<#
+.LINK
+https://github.com/si-kotic/Update-VPNConnectionsList
+#>
 Param (
     [String]$PbkPath = "\\brick2\files\Data\ServiceDesk\VPN"
 )
